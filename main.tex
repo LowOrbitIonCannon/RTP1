@@ -1,0 +1,69 @@
+\include{header}
+\lhead{}
+\rhead{}
+
+% anpassen!
+\chead{Regelungstechnik - Praktikum 1}
+\lfoot{08.05.2020}
+\cfoot{Felix Arndt, Loïc Fernau, Niklas Bammann}
+
+\rfoot{Seite \thepage}
+
+\usepackage{titlesec}
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{0pt}{0pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+
+\begin{document}
+	% Titelseite anpassen
+	\includepdf[pages={1-6}]{pdf_ext/200310_Anleitung_RTP_V3_3_1.pdf}
+
+ 	\begin{titlepage}
+ 		\begin{flushright}
+			\includegraphics[width=0.5\textwidth]{img/title.png}\\[2cm]
+		\end{flushright}
+		
+		\begin{center}
+			%\textsc{\LARGE Hochschule für angewandte Wissenschaften}\\[0.2cm]
+			%\textsc{\LARGE Hamburg}\\[1.5cm]
+			\textsc{\Large Regelungstechnik}
+			\rule{\linewidth}{0.5mm}\\[1.5cm]
+			{ \huge \bfseries Praktikumsprotokoll}
+			\rule{\linewidth}{0.5mm}\\[2cm]
+			% Termin anpassen
+			{ \huge \bfseries Die Temperatur-Regelstrecke}\\[2cm]
+            
+            \LARGE Felix Arndt \\
+			\LARGE Loïc Fernau \\
+			\LARGE Niklas Bammann \\[4cm]
+			% Gruppe anpassen
+			\large RTP1
+		\end{center}
+	\end{titlepage}
+	\newpage
+	
+	\renewcommand{\baselinestretch}{0.8}\normalsize
+	\tableofcontents
+	\listoffigures
+	\listoftables
+	\renewcommand{\baselinestretch}{1.0}\normalsize
+	
+	\newpage
+
+	\setlength{\headsep}{0.4em}
+	
+
+	\input{tex/01_einleitung}
+	\input{tex/02_vorbereitung}
+	\input{tex/03_messungen}
+	\input{tex/04_auswertung}
+	\input{tex/99_fazit}
+	
+
+
+	\newpage
+
+
+
+\end{document}
